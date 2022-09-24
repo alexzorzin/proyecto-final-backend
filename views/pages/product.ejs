@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%- include("../partials/head") %>
+	</head>
+	<body>
+		<main class="page-wrapper bg-dark p-b-50">
+		<div class="container">
+			<h1 class="text-center pt-4">TIENDA ARGENTINA: PRODUCTOS</h1>
+			<h3 class="text-center m-4 text-white"><%= title %></h3>
+			<div class="d-flex bg-gra-01 justify-content-center">
+				<div class="card text-center pb-2 w-50">
+					<div class="text-center">
+						<img src="<%= data.thumbnail %>" width="120" height="120" alt="Product" />
+					</div>
+					<div class="">
+						<h4><%= data.title %></h4>
+						<p class="my-4"><%= data.description %></p>
+						<p class="h1">$<%= data.price %></p>
+						<p class="">Code: <%= data.code %></p>
+						<a href="/home" class="btn border-dark bg-gra-01 rounded-pill">Ver todos</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<%- include("../partials/head") %>
+</head>
+
+<body>
+	<main class="page-wrapper bg-dark p-t-45 p-b-50">
+		<section class="wrapper wrapper--w790 pt-5">
+			<div class="card card-5">
+				<div class="card-heading">
+					<h2 class="title">Login</h2>
+				</div>
+				<div class="card-body">
+					<form class="form-inline " action="/login" method="post" autocomplete="off">
+						<div>
+							<label for="userEmail">User E-mail</label>
+							<input id="userEmail" class="form-control" type="email" name="userEmail" required>
+							<label for="password">Password</label>
+							<input id="password" class="form-control" type="password" name="password" required>
+						</div>
+						<div class="text-center">
+							<button type="submit" class="btn border-dark bg-gra-01 rounded-pill mt-4 w-50"">Login</button>
+							<br>
+								<button type=" button" class="btn border-dark bg-gra-01 rounded-pill mt-4">
+									<a class="text-dark text-decoration-none" href="/signup">Signup</a>
+								</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+
+</html>

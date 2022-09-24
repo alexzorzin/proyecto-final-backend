@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../partials/head") %>
+</head>
+<body>
+
+    <main class="page-wrapper bg-dark p-t-45 p-b-50">
+		<section class="wrapper wrapper--w790 pt-5">
+			<div class="card card-5">
+				<div class="card-heading">
+					<h2 class="title">Log Out</h2>
+				</div>
+				<div class="card-body">
+					<h3 class="text-center">Has cerrado sesión, nos vemos pronto, <%= nameUser %>! </h3>
+				</div>
+			</div>
+		</section>
+	</main>
+    
+    <script>
+        setTimeout(() => {
+            location.href = '/'
+        }, 2000)
+    </script>
+</body>
+</html>

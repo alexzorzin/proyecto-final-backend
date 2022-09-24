@@ -1,0 +1,47 @@
+<section class="wrapper wrapper--w790 pt-5">
+	<div class="card card-5">
+		<div class="card-heading">
+			<h2 class="title">Chat</h2>
+		</div>
+		<div class="p-2" id="messages"></div>
+
+
+		<form onsubmit="addMessage(this)" class="card card-5 container pt-2">
+			<div class="form-group">
+				<label for="id">E-mail</label>
+				<input id="id" class="form-control" type="text" name="id" required>
+			</div>
+
+			<div class="form-group">
+				<label for="nombre">Nombre</label>
+				<input id="nombre" class="form-control" type="text" step="0.01" name="nombre" required>
+			</div>
+
+			<div class="form-group">
+				<label for="apellido">Apellido</label>
+				<input id="apellido" class="form-control" type="text" step="0.01" name="apellido" required>
+			</div>
+
+			<div class="form-group">
+				<label for="nickname">Nickname</label>
+				<input id="nickname" class="form-control" type="text" step="0.01" name="nickname" required>
+			</div>
+
+			<div class="form-group">
+				<label for="edad">Edad</label>
+				<input id="edad" class="form-control" type="text" step="0.01" name="edad" required>
+			</div>
+
+			<div class="form-group">
+				<label for="avatar">Avatar (link)</label>
+				<input id="avatar" class="form-control" type="text" step="0.01" name="avatar" required>
+			</div>
+
+			<div class="form-group">
+				<label for="text">Mensaje</label>
+				<input id="text" class="form-control" type="text" name="text">
+			</div>
+			<button id="send" class="fs-6 my-3 btn border-dark bg-gra-01 rounded-pill" type="submit">Send</button>
+		</form>
+	</div>
+</section>

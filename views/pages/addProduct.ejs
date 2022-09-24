@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("../partials/head") %>
+</head>
+
+<body>
+    <main class="page-wrapper bg-dark p-b-50">
+        <div class="container">
+            <h1 class="text-center pt-4">TIENDA ARGENTINA: PRODUCTOS</h1>
+            <h3 class="text-center m-4 text-white">
+                <%= title %>
+            </h3>
+            <div class="d-flex justify-content-center pb-2 bg-gra-01">
+                <form class="w-50" action="/api/products/add" method="post">
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Title</label>
+                        <input type="text" class="form-control" id="title" placeholder="title" name="title">
+                    </div>
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Description</label>
+                        <input type="text" class="form-control" id="description" placeholder="description"
+                            name="description">
+                    </div>
+                    <div class="mb-3">
+                        <label for="code" class="form-label">Code</label>
+                        <input type="number" class="form-control" id="code" placeholder="code" name="code">
+                    </div>
+                    <div class="mb-3">
+                        <label for="thumbnail" class="form-label">Thumbnail</label>
+                        <input type="text" class="form-control" id="thumbnail" placeholder="thumbnail" name="thumbnail">
+                    </div>
+                    <div class="mb-3">
+                        <label for="price" class="form-label">Price</label>
+                        <input type="number" class="form-control" id="price" placeholder="price" name="price">
+                    </div>
+                    <button type="submit" class="btn bg-gra-01 border-dark rounded-pill">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

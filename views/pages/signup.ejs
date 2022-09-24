@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<%- include("../partials/head") %>
+</head>
+
+<body>
+	<main class="page-wrapper bg-dark p-t-45 p-b-50">
+		<section class="wrapper wrapper--w790 pt-5">
+			<div class="card card-5">
+				
+						<div class="col-12 bg-light jumbotron text-center">
+							<div class="card-heading">
+								<h2 class="title">Sign Up</h2>
+							</div>
+							<div class="p-4">
+							<form class="form-inline" action="/signup" method="post" enctype="multipart/form-data"
+								autocomplete="off">
+								<div class="form-group">
+									<label for="userName">Enter your name</label>
+									<input id="userName" class="form-control" type="text" name="userName" required />
+									<label for="userAddress">Enter your address</label>
+									<input id="userAddress" class="form-control" type="text" name="userAddress"
+										required />
+									<label for="userPhone">Enter your phone number</label>
+									<input id="userPhone" class="form-control" type="number" name="userPhone"
+										required />
+									<label for="userEmail">Enter your email</label>
+									<input id="userEmail" class="form-control" type="email" name="userEmail" required />
+									<label for="password">Write a password</label>
+									<input id="password" class="form-control" type="password" name="password"
+										required />
+									<label for="userPhoto">Choose your profile picture</label>
+									<input id="userPhoto" class="form-control" type="file" name="userPhoto" required />
+								</div>
+								<button type="submit" class="btn border-dark bg-gra-01 rounded-pill mt-4 w-50">Signup</button>
+								<br>
+								<a class="btn border-dark bg-gra-01 rounded-pill mt-4" href="/login">LOGIN</a>
+							</form>
+						</div>
+						</div>
+					
+			</div>
+		</section>
+	</main>
+</body>
+
+</html>

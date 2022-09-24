@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-gra-01">
+	<div class="container-fluid">
+		<a class="navbar-brand fw-bold" href="#">User: <%= dataUser.userName %></a>
+		<button
+			class="navbar-toggler"
+			type="button"
+			data-bs-toggle="collapse"
+			data-bs-target="#navbarNav"
+			aria-controls="navbarNav"
+			aria-expanded="false"
+			aria-label="Toggle navigation"
+		>
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse display-6 pb-5 flex-grow-0" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item mx-2">
+					<a
+						class="profile-menu nav-link active text-dark fw-bolder fs-4"
+						aria-current="page"
+						href="/api/user/profile"
+						>My profile</a
+					>
+				</li>
+				<li class="nav-item mx-2">
+					<a
+						class="profile-menu nav-link active fw-bolder fs-4 text-dark"
+						aria-current="page"
+						href="/api/cart/<%= dataUser._id %>/products"
+						>My cart</a
+					>
+				</li>
+				<li class="nav-item-button mx-2 pb-5">
+					<form action="/logout" method="post">
+						<input type="text" hidden="true" name="userId" value="<%= dataUser._id %>" />
+						<input type="submit" class="fs-4 btn btn-dark rounded-pill text-white fw-bold" value="LOGOUT" />
+					</form>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>

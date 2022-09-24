@@ -1,0 +1,30 @@
+{"level":"warn","message":"Usuario no encontrado"}
+{"level":"warn","message":"El usuario Demo ya existe"}
+{"level":"warn","message":"El usuario no ha sido encontrado"}
+{"level":"warn","message":"Usuario no encontrado"}
+{"level":"error","message":"ERROR AL USAR: add: MongoServerError: E11000 duplicate key error collection: process.carts index: userId_1 dup key: { userId: \"632e41a52344459c3ebab7cf\" }"}
+{"level":"error","message":"ERROR AL USAR: add: MongoServerError: E11000 duplicate key error collection: process.carts index: userId_1 dup key: { userId: \"632e41a52344459c3ebab7cf\" }"}
+{"level":"error","message":"ERROR AL USAR: add: MongoServerError: E11000 duplicate key error collection: process.carts index: userId_1 dup key: { userId: \"632e41a52344459c3ebab7cf\" }"}
+{"level":"error","message":"ERROR AL USAR: add: MongoServerError: E11000 duplicate key error collection: process.carts index: userId_1 dup key: { userId: \"632e41a52344459c3ebab7cf\" }"}
+{"level":"error","message":"ERROR AL USAR: add: MongoServerError: E11000 duplicate key error collection: process.carts index: userId_1 dup key: { userId: \"632e41a52344459c3ebab7cf\" }"}
+{"level":"error","message":"ERROR AL USAR: add: MongoServerError: E11000 duplicate key error collection: process.carts index: userId_1 dup key: { userId: \"632e41a52344459c3ebab7cf\" }"}
+{"level":"error","message":"ERROR AL USAR: add: MongoServerError: E11000 duplicate key error collection: process.carts index: userId_1 dup key: { userId: \"632e41a52344459c3ebab7cf\" }"}
+{"level":"error","message":"ERROR AL USAR: add: MongoServerError: E11000 duplicate key error collection: process.carts index: userId_1 dup key: { userId: \"632e41a52344459c3ebab7cf\" }"}
+{"level":"error","message":"ERROR AL USAR: add: MongoServerError: E11000 duplicate key error collection: process.carts index: userId_1 dup key: { userId: \"632e41a52344459c3ebab7cf\" }"}
+{"level":"error","message":"Error al comprobar si existe el usuario: TypeError: this.UserApi.ifExist is not a function"}
+{"level":"warn","message":"CONTRASEÑA INCORRECTA"}
+{"level":"warn","message":"CONTRASEÑA INCORRECTA"}
+{"level":"error","message":"ERROR AL USAR: add: MongoServerError: E11000 duplicate key error collection: process.carts index: userId_1 dup key: { userId: \"632e41a52344459c3ebab7cf\" }"}
+{"level":"error","message":"ERROR AL USAR: add: MongoServerError: E11000 duplicate key error collection: process.carts index: userId_1 dup key: { userId: \"632e41a52344459c3ebab7cf\" }"}
+{"level":"error","message":"ERROR AL USAR: add: MongoServerError: E11000 duplicate key error collection: process.carts index: userId_1 dup key: { userId: \"632e41a52344459c3ebab7cf\" }"}
+{"level":"error","message":"ERROR AL USAR: add: MongoServerError: E11000 duplicate key error collection: process.carts index: userId_1 dup key: { userId: \"632e41a52344459c3ebab7cf\" }"}
+{"level":"error","message":"ERROR AL USAR: add: MongoServerError: E11000 duplicate key error collection: process.carts index: userId_1 dup key: { userId: \"632e41a52344459c3ebab7cf\" }"}
+{"level":"error","message":"ERROR AL USAR: add: MongoServerError: E11000 duplicate key error collection: process.carts index: userId_1 dup key: { userId: \"632e41a52344459c3ebab7cf\" }"}
+{"level":"error","message":"ERROR AL USAR: add: MongoServerError: E11000 duplicate key error collection: process.carts index: userId_1 dup key: { userId: \"632e41a52344459c3ebab7cf\" }"}
+{"level":"error","message":"ERROR AL USAR: add: MongoServerError: E11000 duplicate key error collection: process.carts index: userId_1 dup key: { userId: \"632e41a52344459c3ebab7cf\" }"}
+{"level":"error","message":"ERROR AL USAR: add: MongoServerError: E11000 duplicate key error collection: process.carts index: userId_1 dup key: { userId: \"632e41a52344459c3ebab7cf\" }"}
+{"level":"error","message":"ERROR AL USAR: add: MongoServerError: E11000 duplicate key error collection: process.carts index: userId_1 dup key: { userId: \"632e41a52344459c3ebab7cf\" }"}
+{"level":"error","message":"ERROR AL USAR: add: MongoServerError: E11000 duplicate key error collection: process.carts index: userId_1 dup key: { userId: \"632e41a52344459c3ebab7cf\" }"}
+{"level":"warn","message":"CONTRASEÑA INCORRECTA"}
+{"level":"error","message":"ERROR AL USAR: add: MongoServerError: E11000 duplicate key error collection: process.carts index: userId_1 dup key: { userId: \"632e41a52344459c3ebab7cf\" }"}
+{"level":"error","message":"ERROR AL USAR: add: MongoServerError: E11000 duplicate key error collection: process.carts index: userId_1 dup key: { userId: \"632e41a52344459c3ebab7cf\" }"}

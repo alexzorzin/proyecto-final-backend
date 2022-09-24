@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("../partials/head") %>
+</head>
+
+<body>
+    <main class="page-wrapper bg-dark p-b-50">
+        <div>
+            <%- include("../partials/session") %>
+        </div>
+        <div class="container">
+            <h1 class="fs-1 text-center mt-4 text-white">TIENDA ARGENTINA: PRODUCTOS</h1>
+            <div class="text-center my-5"><a href="/api/products/form?admin=true"
+                    class="fs-5 btn bg-gra-01 border-dark rounded-pill text-center bold">Agregar un producto</a></div>
+            <% if(data) { %>
+                <section class="wrapper wrapper--w699 pt-5">
+                    <div class="card card-5">
+                        <div class="card-heading">
+                            <h3 class="text-center m-4 text-decoration-none text-white"><a>
+                                    <%= title %>
+                            </h3>
+                        </div>
+                        <div class="product-list bg-dark">
+                            <% data.forEach((product)=>{ %>
+                                <div id={id} class="col-md-4 justify-content-center cardContainer">
+
+                                    <div class="card col-md-3 m-2 rounded-3 cardWidth">
+                                        <img src="<%= product.thumbnail %>" class="rounded" alt=<%=product.title %>
+                                        />
+                                        <div class="card-body cardPadding">
+                                            <h5 class="card-title">
+                                                <%= product.title %>
+                                            </h5>
+                                            <p class="fw-bold" style="font-size: 36px">
+                                                $<%= product.price %>
+                                            </p>
+                                            <p class="card-text">
+                                                <%= product.description %>
+                                            </p>
+                                            <h5 class="card-title">Code: <%= product.code %>
+                                            </h5>
+                                            <a href="/api/products/<%= product.id %>" class="btn border-dark bg-gra-01 rounded-pill">
+                                                View
+                                            </a>
+                                            <br>
+                                            <% if(dataUser.userRole=="admin" ) {%>
+                                                <a href="/api/products/form/<%= product.id %>?"
+                                                    class="btn btn-primary fw-bold">
+                                                    Edit
+                                                </a>
+                                                <button class="btn btn-danger fw-bold"
+                                                    onclick="sendId(`<%= product.id %>`)"> Delete</button>
+                                                <% } else { %>
+                                                    <button class="btn bg-gra-01 border-dark rounded-pill"
+                                                        onclick="addToCart(`<%= product.title %>`,`<%= product.price %>`)">Add
+                                                        to Cart</button>
+                                                    <% } %>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <% }) %>
+                        </div>
+                    </div>
+
+                    <% } else { %>
+                        <h3 class="mt-4 text-center text-info">LISTA VACIA, AGREGUE UN PRODUCTO</h3>
+                        <% } %>
+                            <div class="mb-5">
+                                <%- include("../partials/chat") %>
+                            </div>
+                </section>
+
+                <!-- Cart -->
+                <button id="boton-carrito" class="floating-btn">
+                    <span id="contadorCarrito">0</span>
+                    <i class="icon-basket">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-bag" viewBox="0 0 16 16">
+                            <path
+                                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                        </svg>
+                    </i>
+                </button>
+                <div class="modal-contenedor">
+                    <div class="modal-carrito">
+                        <h3 class="mb-4">CARRITO</h3>
+                        <button id="carritoCerrar"><i class="icon-cancel"></i></button>
+                        <div id="carrito-contenedor"></div>
+                        <div class="row mx-2">
+                            <p class="precioProducto col-7">TOTAL: $<span id="precioTotal"></span></p>
+                            <a><button id="empty-cart-btn" class=" my-3 btn btn-danger rounded-pill">Vaciar
+                                    Carrito</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <%- include("../partials/scripts") %>
+                    <%- include("../partials/socket") %>
+    </main>
+</body>
+
+</html>
